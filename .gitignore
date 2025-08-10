@@ -1,0 +1,14 @@
+# Node / Angular
+node_modules/
+dist/
+.cache/
+.tmp/
+
+# Env / secrets
+.env
+backend/.env
+frontend/.env
+
+# OS
+.DS_Store
+Thumbs.db

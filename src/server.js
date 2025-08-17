@@ -8,6 +8,7 @@ const dataRoutes = require('./routes/dataRoutes');
 const usersRoutes = require('./routes/usersRoutes');
 const brandsRoutes = require('./routes/brandsRoutes');
 const categoriesRoutes = require('./routes/categoriesRoutes');
+const unitsOfMeasureRoutes = require('./routes/unitsOfMeasureRoutes');
 
 const app = express();
 
@@ -26,7 +27,7 @@ app.use('/api/data', dataRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/brands', brandsRoutes);
 app.use('/api/categories', categoriesRoutes);
-
+app.use('/api/uom',unitsOfMeasureRoutes)
 
 const PORT = process.env.PORT | 4000;
 
